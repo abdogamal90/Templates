@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Calculator/style.css">
+    <link rel="stylesheet" href="../Calculator/main.js">
+    <script src="main.js"></script>
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div id="area"></div>
+        <button class="number" onclick="pushBtn(this)" value="1" type="button">1</button>
+        <button class="number" onclick="pushBtn(this)"  value="2" type="button">2</button>
+        <button class="number" onclick="pushBtn(this)" value="3" type="button">3</button>
+        <button class="number" onclick="pushBtn(this)" value="4" type="button">4</button>
+        <button class="number" onclick="pushBtn(this)" value="5" type="button">5</button>
+        <button class="number" onclick="pushBtn(this)" value="6" type="button">6</button>
+        <button class="number" onclick="pushBtn(this)" value="7" type="button">7</button>
+        <button class="number" onclick="pushBtn(this); " value="8" type="button">8</button>
+        <button class="number" onclick="pushBtn(this);" value="9" type="button">9</button>
+        <button class="number" onclick="pushBtn(this);" value="0" type="button">0</button>
+        <button class="operator" onclick="pushBtn(this);" id="+" value="+" type="button">+</button>
+        <button class="operator" onclick="pushBtn(this);" id="-" value="-" type="button">-</button>
+        <button class="operator" onclick="pushBtn(this)" id="/" value="/" type="button">/</button>
+        <button class="operator" onclick="pushBtn(this)" id="*" value="*" type="button">*</button>
+        <button class="clear" onclick="pushBtn(this)" id="clear" value="clear" type="button">C</button>
+        <button class="evaluate" onclick="pushBtn(this)" id="=" value="=" type="button">=</button>
+    </div>
+
+    <script>
+    var input = document.getElementById('area');
+    var number = document.getElementsByClassName('number');
+
+function pushBtn(output){
+        var pushed = output.innerHTML;
+        if(pushed == "="){
+            input.innerHTML = eval(input.innerHTML);
+        }
+        else if(pushed == "C"){
+            input.innerHTML = "";
+        }
+        else if(input.innerHTML == "0"){
+            input.innerHTML = pushed;
+        }
+        else{
+            if(input.innerHTML == "undefined"){
+                input.innerHTML == pushed;
+            }
+            else{
+            input.innerHTML+=pushed;
+            }
+        }
+}
+</script>
+
+</body>
+</html>
