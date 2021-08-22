@@ -1,3 +1,0 @@
-C:/Users/eng_a/CLionProjects/power recursion/cmake-build-debug/CMakeFiles/power_recursion.dir
-C:/Users/eng_a/CLionProjects/power recursion/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/eng_a/CLionProjects/power recursion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
