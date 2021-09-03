@@ -63,7 +63,6 @@ nav{
 }
 .list ul{
     display: flex;
-    padding: 26px;
     padding-top: 26px;
 }
 .list li{
@@ -104,34 +103,38 @@ header{
     margin-bottom: 125px;
     font-size: 20px;
 }
-    
 
 .a1{
     color: #0FB45F;
-    background-color: #fff;
     padding: 16px 38px;
     margin-left: 6%;
+    cursor: pointer;
+    background-color: #140C40;   
 }
 .a2{
     padding: 16px 38px;
-    color: #fff;
+    cursor: pointer;
+    background-color: #140C40;
 }
 .form1{
-    margin-top: 15px;
     margin-left: 6%;
     background-color: #fff;
     padding: 30px;
     height: 105px;
     width: 94%;
+    display: none;
 }
 .form2{
-    margin-top: -105px;
     margin-left: 6%;
     background-color: #fff;
     display: none;
     height: 105px;
     padding: 30px;
     width: 94%;
+    display: none;
+}
+.active{
+    display: block;
 }
 .form input{
     border-radius: 20px;
@@ -258,7 +261,7 @@ header{
     margin-top: -100vh;
     float: right;
     width: 50%; 
-    background-image: url(/assets/Imgs/download\ \(4\).png);
+    background-image: url(../Imgs/download\ \(4\).png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -387,7 +390,7 @@ section .container1{
 
 .pic{
     width: 100%;
-    margin-top: 200px;
+   /* margin-top: 200px;*/
     display: flex;
 }
 .pics{
@@ -396,13 +399,13 @@ section .container1{
 .pics img{
     width:100%; 
 }
-.pics button:hover{
+.pics:hover button{
     transform: translateY(-100px);
     transition: 0.3s ease-in-out;
     background: #0FB45F;
     border-color: #0FB45F;
 }
-.pics img:hover{
+.pics:hover img{
     filter:brightness(50%);
     transition: 0.4s;
 }
@@ -420,4 +423,71 @@ section .container1{
     background: #140C40;
     height: 100vh;
     margin-top: -9vh;
+}
+.act{
+    background-color:white;
+}
+.nav{
+    margin-top: -16px;
+    display: flex;
+}
+.main-boss{
+    margin-top: -46px;
+}
+code{
+    color: white;
+}
+.anime{
+    text-align-last: center;
+    display: block;
+}
+.anime:hover{
+    transition: 1s;
+    transform: translate(-50px);
+    
+}
+@media only screen and (max-width:375px) {
+    
+    img{
+        width: 100%;
+    }
+    .btn-2{
+        width: 135px;
+    }
+    .pic{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .pics{
+        margin-top: -50px;
+    }
+    .sora1 button{
+        transform: none;
+    }
+    .sora2 button{
+        transform: none;
+    }
+    .sora3 button{
+        transform: none;
+    }
+    .sora4 button{
+        transform: none;
+    }
+    .dwayer img{
+        width: 90px;
+        height: 90px;
+    }
+    .dwayer button{
+        margin-left: 20px;
+    }
+    .imgs{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        
+    }
 }
