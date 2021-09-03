@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/Css/normalize.css"/>
-    <link href="assets/Css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/Css/style.css"/>
     <link rel="stylesheet" href="assets/Css/flickity.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-    <script src="assets/Js/plugin.js"></script>
-    <script src="assets/Js/flickity.pkgd.min.js"></script>
+    <script src="assets/Js/plugin.js" defer></script>
+    <script src="assets/Js/flickity.pkgd.min.js" defer></script>
 
     <title>Testing</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="/assets/Imgs/download.png">
+            <img src="assets/Imgs/download.png">
         </div>
         <div class="phone">
             <p>01145019936</p>
@@ -37,23 +36,25 @@
                 <div class="form">
                     <h1>Find Your Dream Home</h1>
                     <p>We Have Over Millions Properties For You</p>
-                    <div class="nav">
-                        <a onclick="Show1()" class="a1">Buy Property</a>
-                        <a onclick="Show2(); chngcolor()" class="a2">Rent Property</a>
-                    </div>
-                    <div id = "form1" class="form1">
-                    <input type="text" placeholder="location">
-                    <input type="text" placeholder="locatin">
-                    <input type="text" placeholder="locati">
-                    <button>Start</button>
-
-                    </div>
-                    <div id="form2" class="form2">
+                    <div class="main-boss">
+                        <div class="nav">
+                            <div class="a1 act">Buy Property</div>
+                            <div class="a2 act">Rent Property</div>
+                        </div>
+                        <div id = "form1" class="form1 active">
                         <input type="text" placeholder="location">
                         <input type="text" placeholder="locatin">
-                        <input type="text" placeholder="locatin">
+                        <input type="text" placeholder="locati">
                         <button>Start</button>
+                        </div>
+                        <div id="form2" class="form2 active">
+                            <input type="text" placeholder="location">
+                            <input type="text" placeholder="locatin">
+                            <input type="text" placeholder="locatin">
+                            <button>Start</button>
+                        </div>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -67,10 +68,10 @@
             </p>
             <div class="imgs">
                 <div class="img1">
-                    <img src="/assets/Imgs/download (1).png">
+                    <img src="assets/Imgs/download (1).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -83,10 +84,10 @@
                     
                 </div>
                 <div class="img2">
-                    <img src="/assets/Imgs/download (2).png">
+                    <img src="assets/Imgs/download (2).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -98,10 +99,10 @@
                     </div>
                 </div>
                 <div class="img3">
-                    <img src="/assets/Imgs/download (3).png">
+                    <img src="assets/Imgs/download (3).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -113,10 +114,10 @@
                     </div>
                 </div>
                 <div class="img4">
-                    <img src="/assets/Imgs/download (1).png">
+                    <img src="assets/Imgs/download (1).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -128,10 +129,10 @@
                     </div>
                 </div>
                 <div class="img5">
-                    <img src="/assets/Imgs/download (2).png">
+                    <img src="assets/Imgs/download (2).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -143,10 +144,10 @@
                     </div>
                 </div>
                 <div class="img6">
-                    <img src="/assets/Imgs/download (3).png">
+                    <img src="assets/Imgs/download (3).png">
                     <div class="border">
                         <p>Place Perfect for Nature Lovers</p>
-                        <img class="loc" src="/assets/Imgs/placeholder.svg">
+                        <img class="loc" src="assets/Imgs/placeholder.svg">
                         <span class="txt1">
                         London, England
                         </span>
@@ -173,98 +174,95 @@
             <div class="container1">
                 <section class="dwayer">
                     <div class="sora1">
-                        <img src="/assets/Imgs/download (5).png">
+                        <img src="assets/Imgs/download (5).png">
                         <button type="button">1</button>
                     </div>
                     <div class="sora2">
-                        <img src="/assets/Imgs/download (5).png">
+                        <img src="assets/Imgs/download (5).png">
                         <button type="button">2</button>
                     </div>
                     <div class="sora3">
-                        <img src="/assets/Imgs/download (5).png">
+                        <img src="assets/Imgs/download (5).png">
                         <button type="button">3</button>
                     </div>
                     <div class="sora4">
-                        <img src="/assets/Imgs/download (5).png">
+                        <img src="assets/Imgs/download (5).png">
                         <button type="button">4</button>
                     </div>
                 </section>
             </div>
         </div>
+        <!--
         <section>
             <p class="txtt">
                 Meet Our Agents
             </p>
 
             <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
-                    <p>Paul Heyman</p>
-        
-                </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
-                <div class="cell"><img src="/assets/Imgs/download (6).png">
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
+                    <p>Paul Heyman</p>
+        
+                </div>
+                <div class="cell"><img src="../Real Estate Project/assets/Imgs/download (6).png">
                     <p>Paul Heyman</p>
         
                 </div>
             </div>
         </section>
+    -->
         <section>
             <div class="pic">
                 <div class="pics">
-                    <img src="/assets/Imgs/download (7).png">
+                    <img src="assets/Imgs/download (7).png">
                     <button type="button">Tokyo</button>   
                 </div>
                 <div class="pics">
-                    <img src="/assets/Imgs/download (7).png">
-                    <button type="button">Tokyo</button>   
- 
-                </div>
-                <div class="pics">
-                    <img src="/assets/Imgs/download (7).png">
+                    <img src="assets/Imgs/download (7).png">
                     <button type="button">Tokyo</button>   
  
                 </div>
                 <div class="pics">
-                    <img src="/assets/Imgs/download (7).png">
+                    <img src="assets/Imgs/download (7).png">
+                    <button type="button">Tokyo</button>   
+ 
+                </div>
+                <div class="pics">
+                    <img src="assets/Imgs/download (7).png">
                     <button type="button">Tokyo</button>     
                 </div>
                 <div class="pics">
-                    <img src="/assets/Imgs/download (7).png">
+                    <img src="assets/Imgs/download (7).png">
                     <button type="button">Tokyo</button>   
                 </div>
             </div>
             <div class="footer">
+                <code>Rebuilt By Abdelrahman Gamal</code>
                 
             </div>
         </section>
-    </main>
-
-
-
-    
-
-    
+    </main>   
 </body>
 </html>
